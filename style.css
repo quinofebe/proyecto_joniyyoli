@@ -1,0 +1,108 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.full{
+    width: 100%;
+    height: 100%;
+    background: url("./imagenes/foto\ principal.jpg") no-repeat 50% 50%;
+    background-size: contain;
+    display: table;
+    margin: auto;
+    top: 0;
+}
+
+.full-inner{
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.content{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1{
+    font-family: 'Shalimar', cursive;
+    color: #bb9457;
+    font-size: 140px;
+    text-shadow: 5px 5px black;
+}
+
+.content button {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #f2cc8f;
+    color: black;
+    cursor: pointer;
+    transition: -5s;
+    overflow: hidden;
+}
+
+.content button:hover {
+    background-color: #c6ac8f;
+}
+
+.content button span {
+    position: absolute;
+    background: black;
+    transition: .5s;
+}
+
+.content button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+.content button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+.content button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.content button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.content button:hover span:nth-child(1) {
+    left: 0;
+
+}
+
+.content button:hover span:nth-child(2) {
+    right: 0;
+
+}
+
+.content button:hover span:nth-child(3) {
+    bottom: 0;
+
+}
+
+.content button:hover span:nth-child(4) {
+    top: 0;
+
+}

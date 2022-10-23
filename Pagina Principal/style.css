@@ -1,0 +1,11 @@
+.header{
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes a img{
+    width: 40px;    
+}
